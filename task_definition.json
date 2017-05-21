@@ -1,0 +1,101 @@
+{
+    "family": "web", 
+    "taskRoleArn": "", 
+    "networkMode": "bridge", 
+    "containerDefinitions": [
+        {
+            "name": "web-haskell", 
+            "image": "991225764181.dkr.ecr.us-east-1.amazonaws.com/haskell-webservice",
+            "cpu": 100, 
+            "memory": 200, 
+            "memoryReservation": 0, 
+            "links": [
+                ""
+            ], 
+            "portMappings": [
+                {
+                    "containerPort": 3000, 
+                    "hostPort": 80, 
+                    "protocol": ""
+                }
+            ], 
+            "essential": true, 
+            "entryPoint": [
+                ""
+            ], 
+            "command": [
+                ""
+            ], 
+            "environment": [
+                {
+                    "name": "", 
+                    "value": ""
+                }
+            ], 
+            "mountPoints": [
+                {
+                    "sourceVolume": "", 
+                    "containerPath": "", 
+                    "readOnly": true
+                }
+            ], 
+            "volumesFrom": [
+                {
+                    "sourceContainer": "", 
+                    "readOnly": true
+                }
+            ], 
+            "hostname": "", 
+            "user": "", 
+            "workingDirectory": "", 
+            "disableNetworking": true, 
+            "privileged": true, 
+            "readonlyRootFilesystem": true, 
+            "dnsServers": [
+                ""
+            ], 
+            "dnsSearchDomains": [
+                ""
+            ], 
+            "extraHosts": [
+                {
+                    "hostname": "", 
+                    "ipAddress": ""
+                }
+            ], 
+            "dockerSecurityOptions": [
+                ""
+            ], 
+            "dockerLabels": {
+                "KeyName": ""
+            }, 
+            "ulimits": [
+                {
+                    "name": "", 
+                    "softLimit": 0, 
+                    "hardLimit": 0
+                }
+            ], 
+            "logConfiguration": {
+                "logDriver": "", 
+                "options": {
+                    "KeyName": ""
+                }
+            }
+        }
+    ], 
+    "volumes": [
+        {
+            "name": "", 
+            "host": {
+                "sourcePath": ""
+            }
+        }
+    ], 
+    "placementConstraints": [
+        {
+            "type": "", 
+            "expression": ""
+        }
+    ]
+}
